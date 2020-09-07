@@ -11,7 +11,6 @@
   }
   //echo "Connection Success: connected!";
   // display table
-  echo "<table style="border: 1";>
   $tsql= "SELECT * FROM [dbo].[restaurant]";
   
   $getResults= sqlsrv_query($conn, $tsql);
@@ -31,5 +30,4 @@
    }
    sqlsrv_free_stmt($getResults);
 
-  echo "</table>";
 ?>
