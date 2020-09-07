@@ -9,7 +9,7 @@
   {
     die("Error connection".sqlsrv_errors());
   }
-  echo "<table style="border:1px">";
+  echo "<table style="border='1'">";
   $tsql= "SELECT * FROM [dbo].[restaurant]";
    $getResults= sqlsrv_query($conn, $tsql);
 
